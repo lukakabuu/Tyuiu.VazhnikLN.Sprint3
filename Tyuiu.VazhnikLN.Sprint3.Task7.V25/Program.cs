@@ -14,7 +14,7 @@ namespace Tyuiu.VazhnikLN.Sprint3.Task7.V25
             int start = -5;
             int end = 5;
             int i = 0;
-            int x = -5;
+            int z = -5;
             double[] res = ds.GetMassFunction(start, end);
             Console.WriteLine($"Отрезок [{start};{end}]");
             Console.WriteLine("***************************************************************************");
@@ -23,15 +23,15 @@ namespace Tyuiu.VazhnikLN.Sprint3.Task7.V25
             Console.WriteLine(" x    F(x)");
             for (i = 0; i < (res.Length - 1); i++)
             {
-                if (x < 0)
+                if (z < 0)
                 {
-                    Console.WriteLine(x + " | " + res[i]);
-                    x++;
+                    Console.WriteLine(z + " | " + res[i]);
+                    z++;
                 }
                 else
                 {
-                    Console.WriteLine(x + "  | " + res[i]);
-                    x++;
+                    Console.WriteLine(z + "  | " + res[i]);
+                    z++;
                 }
             }
 
